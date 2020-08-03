@@ -1,0 +1,20 @@
+{
+    "name": "poc-server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js",
+        "migrate": "knex --knexfile ./db/knexfile.js migrate:latest",
+        "make": "knex --knexfile ./db/knexfile.js migrate:make"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "bookshelf": "^1.2.0",
+        "jsonwebtoken": "^8.5.1",
+        "knex": "^0.21.2",
+        "pg": "^8.3.0"
+    }
+}
